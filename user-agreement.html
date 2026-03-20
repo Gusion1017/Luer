@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUER 用户协议 / User Agreement</title>
+    <style>
+        :root {
+            --bg: #f8f6f2;
+            --text: #333;
+            --accent: #07C160;
+            --card: #fff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --text: #e0e0e0;
+                --accent: #07C160;
+                --card: #2d2d2d;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 20px;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .lang-switch {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .lang-switch button {
+            padding: 8px 16px;
+            border: 1px solid var(--accent);
+            background: transparent;
+            color: var(--accent);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .lang-switch button.active {
+            background: var(--accent);
+            color: #fff;
+        }
+        h1 { font-size: 1.5rem; margin-top: 0; }
+        h2 { font-size: 1.2rem; margin-top: 24px; }
+        p { margin: 12px 0; }
+        ul { margin: 8px 0; padding-left: 24px; }
+        .lang { display: none; }
+        .lang.active { display: block; }
+        .updated { font-size: 0.9rem; opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btn-zh" class="active">中文</button>
+        <button id="btn-en">English</button>
+    </div>
+
+    <!-- 中文版 -->
+    <div id="zh" class="lang active">
+        <h1>LUER（鹿了）用户协议</h1>
+        <p class="updated">最后更新：2026 年 3 月</p>
+
+        <p>欢迎使用 LUER（鹿了）应用。使用本应用即表示您同意以下条款。</p>
+
+        <h2>一、服务说明</h2>
+        <p>LUER 是一款签到记录应用，帮助用户记录每日签到状态、连续签到天数及忍耐力等数据。我们致力于提供简洁、私密的使用体验。</p>
+
+        <h2>二、账号注册与使用</h2>
+        <ul>
+            <li>您需提供有效的账号和密码完成注册；</li>
+            <li>账号长度为 6-20 位，仅可使用数字、英文字母和下划线；</li>
+            <li>密码至少 8 位，仅可使用数字和英文字母；</li>
+            <li>您应妥善保管账号密码，对账号下的所有行为负责。</li>
+        </ul>
+
+        <h2>三、用户行为规范</h2>
+        <ul>
+            <li>不得利用本应用从事违法违规活动；</li>
+            <li>不得发布违规、侵权或骚扰他人的内容；</li>
+            <li>不得恶意干扰应用正常运行或他人正常使用。</li>
+        </ul>
+
+        <h2>四、数据与内容</h2>
+        <p>您在本应用中产生的签到记录、备注等数据将存储在云端，我们会在合理范围内保障数据安全。您可随时查看、修改或删除自己的数据。</p>
+
+        <h2>五、免责声明</h2>
+        <p>因网络状况、设备故障等不可抗力导致的服务中断或数据异常，我们将在能力范围内协助恢复，但不承担由此产生的直接或间接损失。</p>
+
+        <h2>六、协议修改</h2>
+        <p>我们可能适时修订本协议，修订后的协议将在应用内公布。若您继续使用本应用，即视为接受修订后的协议。</p>
+    </div>
+
+    <!-- English version -->
+    <div id="en" class="lang">
+        <h1>LUER User Agreement</h1>
+        <p class="updated">Last updated: March 2026</p>
+
+        <p>Welcome to LUER. By using this app, you agree to the following terms.</p>
+
+        <h2>1. Service Description</h2>
+        <p>LUER is a check-in app that helps you record daily check-in status, consecutive days, and endurance data. We aim to provide a simple and private experience.</p>
+
+        <h2>2. Account Registration and Use</h2>
+        <ul>
+            <li>You must provide a valid account and password to register;</li>
+            <li>Account length: 6-20 characters, letters, numbers and underscore only;</li>
+            <li>Password: at least 8 characters, letters and numbers only;</li>
+            <li>You are responsible for keeping your credentials secure and for all activities under your account.</li>
+        </ul>
+
+        <h2>3. User Conduct</h2>
+        <ul>
+            <li>Do not use the app for illegal activities;</li>
+            <li>Do not post content that violates rules, infringes rights, or harasses others;</li>
+            <li>Do not maliciously disrupt the app or others' use.</li>
+        </ul>
+
+        <h2>4. Data and Content</h2>
+        <p>Your check-in records, notes, and other data are stored in the cloud. We will protect your data within reasonable means. You may view, edit, or delete your data at any time.</p>
+
+        <h2>5. Disclaimer</h2>
+        <p>We are not liable for service interruptions or data issues caused by network conditions, device failures, or other force majeure. We will assist with recovery when possible.</p>
+
+        <h2>6. Amendments</h2>
+        <p>We may update these terms from time to time. Updated terms will be published in the app. Continued use constitutes acceptance of the revised terms.</p>
+    </div>
+
+    <script>
+        document.getElementById('btn-zh').onclick = function() {
+            document.getElementById('zh').classList.add('active');
+            document.getElementById('en').classList.remove('active');
+            this.classList.add('active');
+            document.getElementById('btn-en').classList.remove('active');
+        };
+        document.getElementById('btn-en').onclick = function() {
+            document.getElementById('en').classList.add('active');
+            document.getElementById('zh').classList.remove('active');
+            this.classList.add('active');
+            document.getElementById('btn-zh').classList.remove('active');
+        };
+    </script>
+</body>
+</html>
