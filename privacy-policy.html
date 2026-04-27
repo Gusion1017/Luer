@@ -56,136 +56,185 @@
         .lang { display: none; }
         .lang.active { display: block; }
         .updated { font-size: 0.9rem; opacity: 0.8; }
+        a { color: var(--accent); }
     </style>
 </head>
 <body>
     <div class="lang-switch">
-        <button id="btn-zh" class="active">中文</button>
-        <button id="btn-en">English</button>
+        <button type="button" id="btn-zh" class="active">中文</button>
+        <button type="button" id="btn-en">English</button>
     </div>
 
     <!-- 中文版 -->
     <div id="zh" class="lang active">
         <h1>LUER（鹿了）隐私政策</h1>
-        <p class="updated">最后更新：2026 年 3 月</p>
+        <p class="updated">最后更新：2026 年 4 月</p>
 
-        <h2>一、引言</h2>
-        <p>LUER（鹿了）是一款基于 iOS 的签到应用，以「鹿」为主题，帮助用户记录每日状态并与鹿友互动。我们重视您的隐私，本隐私政策说明我们如何收集、使用、存储和保护您的个人信息。</p>
+        <p>LUER（「我们」）重视您的隐私。本政策说明当您使用 LUER iOS 应用（「本应用」）时，我们如何收集、使用、存储、共享和保护您的个人信息。本政策与 <a href="user-agreement.html">《用户协议》</a> 一并构成重要约定。使用本应用即表示您已阅读并理解本政策。</p>
 
-        <h2>二、我们收集的信息</h2>
-        <p>为提供应用功能，我们可能收集以下信息：</p>
+        <h2>一、我们收集的信息</h2>
+        <p>为实现功能，我们可能处理以下信息（具体以您实际使用的功能为准）：</p>
         <ul>
-            <li><strong>账户信息</strong>：账号（用户名）、密码、昵称（显示名）、6 位 UID</li>
-            <li><strong>签到数据</strong>：每日签到记录（Yes/No）、连续签到天数、忍耐力、精力值</li>
-            <li><strong>社交数据</strong>：鹿友列表、好友申请、点赞记录</li>
-            <li><strong>个人内容</strong>：日期笔记（您自愿填写的备注）</li>
-            <li><strong>设备与偏好</strong>：主题设置、语言偏好、提醒时间、登录状态（本地存储）</li>
+            <li><strong>账户与身份</strong>：用户名、密码（经安全处理后存储）、昵称（显示名）、6 位 UID；若您使用「通过 Apple 登录」，我们可能从 Apple 获得与您 Apple ID 关联的标识符（如用户标识），并将其与您的 LUER 账号绑定，用于注册验证、登录与「忘记账号」类流程；</li>
+            <li><strong>签到与玩法数据</strong>：每日签到记录（Yes/No 等）、连续天数、忍耐力、精力、兑换与历史记录等；</li>
+            <li><strong>社交关系</strong>：鹿友列表、好友申请状态、互动数据（如点赞）；</li>
+            <li><strong>用户生成内容（UGC）</strong>：您在「动态」发布的文字、可选正文颜色标记、发布时间；您发表的评论及可能的回复关系；动态的点赞关系；部分内容可能包含发布时的昵称快照；</li>
+            <li><strong>个人内容与偏好</strong>：日期备忘录、称号与背景等虚拟展示配置、主题与语言、提醒时间等；</li>
+            <li><strong>安全与合规相关</strong>：您设置的<strong>屏蔽列表</strong>（您屏蔽的用户）、以及为落实「被屏蔽方动态流过滤」等规则而可能在您的用户文档中维护的<strong>被屏蔽关系索引</strong>（例如记录「谁屏蔽了我」的标识列表，具体字段以服务端为准）；举报记录（举报类型、说明、被举报对象标识、<strong>被举报动态正文全文</strong>等，用于审核）；账号警告、昵称违规标记等处置状态；</li>
+            <li><strong>官方邮件</strong>：向您账号投递的系统或运营邮件的内容与已读状态（如有该功能）；</li>
+            <li><strong>设备端与本地</strong>：登录状态、界面偏好、小组件所需的摘要数据等，可能保存在本机或应用组（App Group）共享存储中；</li>
+            <li><strong>应用内购买</strong>：通过 Apple StoreKit 完成的交易由 Apple 处理；我们可能仅保存与玩法相关的权益结果（如精力），不直接收集您的完整银行卡信息。</li>
         </ul>
 
-        <h2>三、信息的使用</h2>
-        <p>我们使用上述信息用于：</p>
+        <h2>二、我们如何使用信息</h2>
+        <p>我们基于合法、正当、必要的原则，将信息用于：</p>
         <ul>
-            <li>创建和管理您的账户</li>
-            <li>提供签到、鹿友、称号、点赞等功能</li>
-            <li>存储您的笔记与偏好设置</li>
-            <li>处理应用内购买（精力等）</li>
-            <li>发送本地签到提醒（若您开启）</li>
+            <li>创建与维护账号、登录验证与安全风控；</li>
+            <li>提供签到、鹿友、动态、评论、点赞、称号与背景、小组件展示等功能；</li>
+            <li>同步与展示您的数据，落实隐私设置（隐藏记录/动态、拒绝申请等）与屏蔽规则；</li>
+            <li>处理举报、违规词过滤、内容审核与账号管理；</li>
+            <li>处理应用内购买相关的权益发放（在 Apple 确认付款后）；</li>
+            <li>发送<strong>本地</strong>签到提醒（若您开启），以及展示应用内通知；</li>
+            <li>遵守法律法规要求，或在法律允许范围内应对争议与安全防护。</li>
+        </ul>
+        <p>我们不会将您的个人信息用于本政策未说明的用途，除非事先征得您的同意或法律另有规定。</p>
+
+        <h2>三、相册、文件与「工具」功能</h2>
+        <p>当您使用设置中的图片处理、扫描、导出到相册等功能时，我们会在获得您授权的前提下访问<strong>相册或文件</strong>。默认情况下，相关图像与文档处理在<strong>您的设备本地</strong>完成，<strong>我们不会将您选择的图片或 PDF 内容上传到服务器</strong>，除非未来功能明确提示并取得单独同意。若系统权限被拒绝，对应功能可能无法使用。</p>
+
+        <h2>四、小组件（Widget）</h2>
+        <p>若您添加本应用提供的小组件，系统可能从应用组共享存储读取<strong>脱敏或摘要级</strong>的签到数据（如当月记录摘要、连续天数等），用于在桌面展示。小组件一般<strong>不单独发起网络请求</strong>；展示内容取决于主应用最近一次写入共享数据的时间与内容。</p>
+
+        <h2>五、Cookie 与同类技术</h2>
+        <p>本应用为原生客户端，通常不使用浏览器 Cookie。若我们通过网页（如帮助页、协议页）提供服务，该等页面可能使用标准网页技术；请以页面说明为准。</p>
+
+        <h2>六、数据存储与第三方服务</h2>
+        <p>您的账号与业务数据主要存储于云服务提供商：</p>
+        <ul>
+            <li><strong>Firebase</strong>（Google）：用于身份认证、数据库（如 Firestore）及与推送相关的基础设施。Firebase 的信息处理受其政策约束，详见 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 隐私与安全性</a>。</li>
+            <li><strong>Apple</strong>：Sign in with Apple、应用内购买、系统权限与小组件等均受 Apple 政策与系统机制约束。</li>
+        </ul>
+        <p><strong>我们不会出售您的个人信息。</strong>除以下情形外，我们不会与第三方共享您的个人信息：</p>
+        <ul>
+            <li>获得您的明确同意；</li>
+            <li>法律法规、司法机关或行政主管部门要求；</li>
+            <li>为履行本政策所述目的，向受托处理者（如云服务商）提供<strong>有限且必要</strong>的数据，且要求其承担保密与安全义务；</li>
+            <li>在合并、收购或破产清算时，如涉及个人信息转让，我们将要求继受方继续受本政策约束。</li>
         </ul>
 
-        <h2>四、数据存储与第三方服务</h2>
-        <p>您的数据存储在受信任的云服务商：</p>
+        <h2>七、数据安全</h2>
+        <p>我们采取合理可行的措施，包括传输加密、访问控制、与云厂商提供的安全能力等，防止数据遭到未经授权的访问、披露或损坏。互联网环境并非绝对安全，请您理解并妥善保管密码与设备。</p>
+
+        <h2>八、保留期限</h2>
+        <p>在您使用本应用期间，我们通常为提供服务而保留必要数据。您注销账号后，我们将删除或匿名化处理您的账号相关数据，<strong>但法律法规要求保留的除外</strong>。部分 UGC 或日志可能因技术架构、备份或合规原因在合理期限内仍存在于备份系统中；我们将按合规要求逐步清除或匿名化。</p>
+
+        <h2>九、您的权利</h2>
+        <p>在适用法律允许的范围内，您有权：</p>
         <ul>
-            <li><strong>Firebase</strong>（Google）：用于身份认证、数据库（Firestore）存储及推送通知基础设施。Firebase 遵循其隐私政策，详见 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 隐私说明</a>。</li>
-            <li><strong>Apple</strong>：应用内购买通过 StoreKit 处理，交易由 Apple 处理。</li>
+            <li>访问、更正您的部分资料（以应用内提供的入口为准）；</li>
+            <li>在设置中修改密码、管理隐私选项、屏蔽用户；</li>
+            <li>注销账号（需完成身份验证）；注销后果请参见 <a href="user-agreement.html">《用户协议》</a> 与应用内说明；</li>
+            <li>通过退出登录清除本机上的登录态（云端数据仍保留直至您注销或我们依规则删除）。</li>
         </ul>
-        <p>我们不会将您的个人信息出售给第三方。</p>
+        <p>如需行使其他法定权利或有问题咨询，请通过应用内「帮助与支持」或开发者联系方式与我们联系；我们可能需验证您的身份。</p>
 
-        <h2>五、数据安全</h2>
-        <p>我们采取合理措施保护您的数据，包括：</p>
-        <ul>
-            <li>使用 Firebase 提供的安全认证与加密传输</li>
-            <li>密码以加密形式存储</li>
-            <li>仅授权用户可访问自己的数据</li>
-        </ul>
+        <h2>十、未成年人保护</h2>
+        <p>本应用不面向 13 岁以下儿童（或您所在司法辖区规定的更高年龄）。若我们发现收集了儿童个人信息，将尽快删除。若您是监护人并认为孩子向我们提供了信息，请联系我们。</p>
 
-        <h2>六、您的权利</h2>
-        <p>您有权：</p>
-        <ul>
-            <li>在设置中修改密码</li>
-            <li>注销账户（需在设置中完成验证流程，注销后数据将被删除）</li>
-            <li>通过退出登录清除本地登录状态</li>
-        </ul>
+        <h2>十一、跨境传输</h2>
+        <p>由于我们使用 Firebase 等全球云服务，您的数据可能被存储在您所在国家/地区以外。我们将遵守适用法律要求，并采取适当措施保护数据安全。</p>
 
-        <h2>七、儿童隐私</h2>
-        <p>本应用不面向 13 岁以下儿童。我们不会故意收集 13 岁以下儿童的个人信息。</p>
+        <h2>十二、政策变更</h2>
+        <p>我们可能不时更新本政策。更新后，我们将在本页面修订「最后更新」日期，并通过应用内提示或其他合理方式告知<strong>重大变更</strong>。继续使用本应用即表示您接受更新后的政策。</p>
 
-        <h2>八、政策变更</h2>
-        <p>我们可能不时更新本隐私政策。重大变更将在应用内或通过其他适当方式通知您。继续使用应用即表示您接受更新后的政策。</p>
-
-        <h2>九、联系我们</h2>
-        <p>如对本隐私政策有任何疑问，请通过应用内反馈或您已知的开发者联系方式与我们联系。</p>
+        <h2>十三、联系我们</h2>
+        <p>如对本政策有任何疑问、意见或投诉，请通过应用内反馈或您已知的开发者联系方式与我们联系。</p>
     </div>
 
     <!-- English version -->
     <div id="en" class="lang">
         <h1>LUER Privacy Policy</h1>
-        <p class="updated">Last updated: March 2026</p>
+        <p class="updated">Last updated: April 2026</p>
 
-        <h2>1. Introduction</h2>
-        <p>LUER is an iOS check-in app themed around "deer" (鹿), helping users record daily status and interact with friends. We value your privacy. This policy explains how we collect, use, store, and protect your personal information.</p>
+        <p>LUER (“we”) respects your privacy. This Policy explains how we collect, use, store, share, and protect personal information when you use the LUER iOS app (the “App”). This Policy works together with our <a href="user-agreement.html">User Agreement</a>. By using the App, you acknowledge this Policy.</p>
 
-        <h2>2. Information We Collect</h2>
-        <p>To provide app functionality, we may collect:</p>
+        <h2>1. Information We Collect</h2>
+        <p>Depending on the features you use, we may process:</p>
         <ul>
-            <li><strong>Account information</strong>: Username, password, display name, 6-digit UID</li>
-            <li><strong>Check-in data</strong>: Daily check-in records (Yes/No), consecutive days, endurance, energy</li>
-            <li><strong>Social data</strong>: Friend list, friend requests, like records</li>
-            <li><strong>Personal content</strong>: Date notes (remarks you voluntarily add)</li>
-            <li><strong>Device & preferences</strong>: Theme, language, reminder time, login status (stored locally)</li>
+            <li><strong>Account &amp; identity</strong>: username, password (stored using secure practices), display name, 6-digit UID; if you use Sign in with Apple, we may receive an Apple user identifier and link it to your LUER account for registration, sign-in, and account recovery flows;</li>
+            <li><strong>Check-in &amp; gameplay</strong>: daily check-ins (e.g., Yes/No), streaks, endurance, energy, exchanges, and history;</li>
+            <li><strong>Social graph</strong>: friend lists, friend requests, interactions (e.g., likes);</li>
+            <li><strong>User-generated content</strong>: text posts in Dynamics, optional text color metadata, timestamps; comments and reply relationships; likes; snapshots of display names at publish time where applicable;</li>
+            <li><strong>Personal content &amp; preferences</strong>: date notes, titles/backgrounds, theme, language, reminder times;</li>
+            <li><strong>Safety &amp; compliance</strong>: block lists (users you block), reverse-index fields needed to enforce feed rules (e.g., who blocked whom—exact fields follow server design); reports (type, description, identifiers, <strong>full reported post text</strong> for Dynamics reports, etc.); warning or nickname-violation flags;</li>
+            <li><strong>Official mail</strong>: messages we deliver in-app and read status, if available;</li>
+            <li><strong>On-device</strong>: login state, UI preferences, widget summary data in local storage or App Group containers;</li>
+            <li><strong>In-app purchases</strong>: transactions are processed by Apple; we may store entitlement outcomes (e.g., energy), not your full payment card data.</li>
         </ul>
 
-        <h2>3. How We Use Your Information</h2>
-        <p>We use the above information to:</p>
+        <h2>2. How We Use Information</h2>
+        <p>We use information to:</p>
         <ul>
-            <li>Create and manage your account</li>
-            <li>Provide check-in, friends, titles, and like features</li>
-            <li>Store your notes and preferences</li>
-            <li>Process in-app purchases (e.g., energy)</li>
-            <li>Send local check-in reminders (if enabled)</li>
+            <li>Create and maintain accounts, authenticate users, and protect security;</li>
+            <li>Provide check-in, friends, Dynamics, comments, likes, titles/backgrounds, widgets, and related features;</li>
+            <li>Sync data and honor privacy settings (hide records/moments, block requests, etc.) and blocking rules;</li>
+            <li>Handle reports, word filtering, moderation, and account actions;</li>
+            <li>Deliver IAP entitlements after Apple confirms purchase;</li>
+            <li>Deliver <strong>local</strong> reminders if enabled, and show in-app notices;</li>
+            <li>Comply with law and protect rights, safety, and integrity.</li>
+        </ul>
+        <p>We do not use personal information for unrelated purposes without consent, except as required by law.</p>
+
+        <h2>3. Photos, Files, and “Tools”</h2>
+        <p>Image and document tools may request access to your <strong>photo library or files</strong>. Processing is performed <strong>on your device by default</strong>; we <strong>do not upload</strong> selected images or PDFs unless a future feature clearly states otherwise and obtains separate consent. Denied permissions may disable features.</p>
+
+        <h2>4. Widgets</h2>
+        <p>Widgets may read summary check-in data from App Group storage to display on your Home Screen. Widgets generally <strong>do not independently access the network</strong>; content depends on what the main app last wrote to shared storage.</p>
+
+        <h2>5. Cookies</h2>
+        <p>The App is native and typically does not use browser cookies. Web pages (e.g., hosted help or legal pages) may use standard web technologies as described on those pages.</p>
+
+        <h2>6. Storage &amp; Third Parties</h2>
+        <p>Account and app data are primarily stored with:</p>
+        <ul>
+            <li><strong>Firebase</strong> (Google): authentication, databases (e.g., Firestore), and related infrastructure. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</li>
+            <li><strong>Apple</strong>: Sign in with Apple, IAP, permissions, and widgets are governed by Apple policies.</li>
+        </ul>
+        <p><strong>We do not sell personal information.</strong> We share information only:</p>
+        <ul>
+            <li>With your consent;</li>
+            <li>When required by law or competent authorities;</li>
+            <li>With processors (e.g., cloud providers) under confidentiality and security obligations, limited to what is necessary;</li>
+            <li>In a merger or acquisition, requiring successors to honor this Policy.</li>
         </ul>
 
-        <h2>4. Data Storage & Third-Party Services</h2>
-        <p>Your data is stored with trusted cloud providers:</p>
+        <h2>7. Security</h2>
+        <p>We use reasonable measures—including encryption in transit, access controls, and vendor security features—to protect data. No method is 100% secure; please protect your password and device.</p>
+
+        <h2>8. Retention</h2>
+        <p>We retain data as needed to provide the App. After account deletion, we delete or anonymize account data <strong>except where law requires retention</strong>. Some UGC or logs may persist for a limited time in backups or due to architecture; we will delete or anonymize per legal requirements.</p>
+
+        <h2>9. Your Rights</h2>
+        <p>Where applicable law grants rights, you may:</p>
         <ul>
-            <li><strong>Firebase</strong> (Google): Used for authentication, Firestore database, and push notification infrastructure. Firebase follows its own privacy policy; see <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</li>
-            <li><strong>Apple</strong>: In-app purchases are processed via StoreKit; transactions are handled by Apple.</li>
+            <li>Access or correct certain profile data (as provided in the App);</li>
+            <li>Change password, manage privacy settings, and block users;</li>
+            <li>Delete your account (with verification); outcomes are described in the <a href="user-agreement.html">User Agreement</a> and in-app text;</li>
+            <li>Sign out to clear local session (cloud data remains until deletion rules apply).</li>
         </ul>
-        <p>We do not sell your personal information to third parties.</p>
+        <p>Contact us via Help &amp; Support or developer channels; we may verify identity before fulfilling requests.</p>
 
-        <h2>5. Data Security</h2>
-        <p>We take reasonable measures to protect your data, including:</p>
-        <ul>
-            <li>Using Firebase secure authentication and encrypted transmission</li>
-            <li>Storing passwords in encrypted form</li>
-            <li>Restricting data access to authorized users only</li>
-        </ul>
+        <h2>10. Children</h2>
+        <p>The App is not directed at children under 13 (or the higher age required in your region). If we learn we collected a child’s data, we will delete it promptly. Parents or guardians may contact us with concerns.</p>
 
-        <h2>6. Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li>Change your password in Settings</li>
-            <li>Delete your account (via the verification flow in Settings; data will be removed upon deletion)</li>
-            <li>Clear local login status by signing out</li>
-        </ul>
+        <h2>11. International Transfers</h2>
+        <p>Using Firebase and other services may involve storage outside your country. We will comply with applicable law and implement appropriate safeguards.</p>
 
-        <h2>7. Children's Privacy</h2>
-        <p>This app is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+        <h2>12. Changes</h2>
+        <p>We may update this Policy. We will change the “Last updated” date and notify you of <strong>material</strong> changes in the App or by other reasonable means. Continued use means acceptance.</p>
 
-        <h2>8. Policy Changes</h2>
-        <p>We may update this privacy policy from time to time. Material changes will be communicated in the app or through other appropriate means. Continued use of the app constitutes acceptance of the updated policy.</p>
-
-        <h2>9. Contact Us</h2>
-        <p>If you have any questions about this privacy policy, please contact us through in-app feedback or the developer contact you are aware of.</p>
+        <h2>13. Contact</h2>
+        <p>Questions or complaints? Reach us via in-app feedback or other developer contacts you have.</p>
     </div>
 
     <script>
