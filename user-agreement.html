@@ -56,82 +56,147 @@
         .lang { display: none; }
         .lang.active { display: block; }
         .updated { font-size: 0.9rem; opacity: 0.8; }
+        a { color: var(--accent); }
     </style>
 </head>
 <body>
     <div class="lang-switch">
-        <button id="btn-zh" class="active">中文</button>
-        <button id="btn-en">English</button>
+        <button type="button" id="btn-zh" class="active">中文</button>
+        <button type="button" id="btn-en">English</button>
     </div>
 
     <!-- 中文版 -->
     <div id="zh" class="lang active">
         <h1>LUER（鹿了）用户协议</h1>
-        <p class="updated">最后更新：2026 年 3 月</p>
+        <p class="updated">最后更新：2026 年 4 月</p>
 
-        <p>欢迎使用 LUER（鹿了）应用。使用本应用即表示您同意以下条款。</p>
+        <p>欢迎使用 LUER（以下简称「本应用」）。请您在使用前仔细阅读本协议。您下载、注册、登录或使用本应用，即表示您已阅读并同意受本协议约束。本协议与 <a href="privacy-policy.html">《隐私政策》</a> 共同构成您与我们之间关于使用本应用的约定。</p>
 
         <h2>一、服务说明</h2>
-        <p>LUER 是一款签到记录应用，帮助用户记录每日签到状态、连续签到天数及忍耐力等数据。我们致力于提供简洁、私密的使用体验。</p>
-
-        <h2>二、账号注册与使用</h2>
+        <p>本应用是一款面向 iOS 用户的签到与社交辅助工具，核心功能包括但不限于：</p>
         <ul>
-            <li>您需提供有效的账号和密码完成注册；</li>
-            <li>账号长度为 6-20 位，仅可使用数字、英文字母和下划线；</li>
-            <li>密码至少 8 位，仅可使用数字和英文字母；</li>
-            <li>您应妥善保管账号密码，对账号下的所有行为负责。</li>
+            <li><strong>签到与记录</strong>：记录每日签到状态（如 Yes/No）、连续天数、忍耐力、精力及相关统计；</li>
+            <li><strong>鹿友</strong>：好友关系、申请与处理、互动展示（如点赞、称号与卡片背景等）；</li>
+            <li><strong>动态（用户生成内容）</strong>：发布与浏览纯文字动态、评论、点赞；提供「推荐」与「我的鹿友」等信息流模式；</li>
+            <li><strong>官方邮件</strong>：在应用内接收运营方发送的系统或通知类邮件（如有）；</li>
+            <li><strong>小组件</strong>：在支持的环境下，通过系统桌面小组件展示与签到相关的摘要信息（数据主要来自本机与应用约定的共享存储）；</li>
+            <li><strong>设置中的工具</strong>：如图片处理、文件扫描与 PDF 相关能力等，具体以应用内实际提供的功能为准。</li>
+        </ul>
+        <p>我们可能因产品迭代调整功能入口或范围，恕不逐一另行通知；重大变更将在合理范围内通过应用内提示或其他方式告知。</p>
+
+        <h2>二、账号注册、登录与安全</h2>
+        <ul>
+            <li>您需按应用内指引完成注册，并保证所提供信息真实、准确；</li>
+            <li>账号（用户名）长度一般为 6–20 位，仅可使用数字、英文字母与下划线（以应用内校验为准）；密码至少 8 位，仅可使用数字与英文字母（以应用内校验为准）；</li>
+            <li>您可使用「通过 Apple 登录」等方式完成身份验证或注册；为防范滥用，同一 Apple ID 可绑定的 LUER 账号数量以应用内规则与提示为准；</li>
+            <li>您应妥善保管账号与密码，对账号下的全部行为负责；如发现盗用，请立即修改密码并联系我们。</li>
         </ul>
 
         <h2>三、用户行为规范</h2>
         <ul>
-            <li>不得利用本应用从事违法违规活动；</li>
-            <li>不得发布违规、侵权或骚扰他人的内容；</li>
-            <li>不得恶意干扰应用正常运行或他人正常使用。</li>
+            <li>不得利用本应用从事任何违反法律法规、公序良俗或侵犯他人合法权益的行为；</li>
+            <li>不得在昵称、动态、评论等任何用户可见内容中发布淫秽、暴力、仇恨、诈骗、侵权、骚扰或含有其他违规信息的内容；</li>
+            <li>不得恶意干扰应用或服务器正常运行，不得使用自动化手段恶意刷接口、爬取数据或干扰他人使用；</li>
+            <li>应用可能对部分文本进行违规词校验；命中时提交可能被拒绝，且不排除进一步处置。</li>
         </ul>
 
-        <h2>四、数据与内容</h2>
-        <p>您在本应用中产生的签到记录、备注等数据将存储在云端，我们会在合理范围内保障数据安全。您可随时查看、修改或删除自己的数据。</p>
+        <h2>四、用户生成内容（UGC）与授权</h2>
+        <p>您在动态、评论等功能中上传、发布的内容，由您自行负责。您声明对该等内容拥有合法权利或已获授权，且不会侵害任何第三方权益。</p>
+        <p>为使本应用提供服务、展示与必要的安全审核，您授予我们在全球范围内、非独占、免费、可转授权的许可，用于在本应用及相关服务中存储、复制、展示、传播您的 UGC，以及为遵守法律、执行本协议、处理举报与安全防护所必需的合理使用。</p>
+        <p>动态中的作者昵称等展示信息可能为发布时的快照；您修改昵称后，历史内容中的展示名不保证自动同步更新。</p>
 
-        <h2>五、免责声明</h2>
-        <p>因网络状况、设备故障等不可抗力导致的服务中断或数据异常，我们将在能力范围内协助恢复，但不承担由此产生的直接或间接损失。</p>
+        <h2>五、举报、审核与处置</h2>
+        <p>您可在鹿友相关功能中对不当昵称等进行举报，在「动态」中对他人动态或评论进行举报。我们将在合理期限内进行核实，并依规则采取包括但不限于警告、删除内容、限制功能或账号等措施。</p>
+        <p><strong>动态举报：</strong>经核实存在违规的，我们可<strong>删除该条动态</strong>；情节严重的，还可对账号采取进一步措施。为便于核对，您提交的举报及后台处理所依据的信息可能包含该动态的<strong>唯一标识（momentId）</strong>、<strong>动态正文全文</strong>（或历史数据中的摘要字段）、被举报用户的<strong>账号与 UID</strong>、<strong>举报类型</strong>、<strong>说明</strong>与<strong>提交时间</strong>等。对<strong>同一条动态</strong>，应用可能限制短时间内的重复举报次数，以减少滥用。</p>
+        <p>评论举报与删除规则以应用内实际能力为准：动态作者或评论发布者可能有权删除相应评论。</p>
 
-        <h2>六、协议修改</h2>
-        <p>我们可能适时修订本协议，修订后的协议将在应用内公布。若您继续使用本应用，即视为接受修订后的协议。</p>
+        <h2>六、隐私、可见性与屏蔽</h2>
+        <p>您可通过隐私设置控制部分信息的可见范围（例如是否对鹿友隐藏签到记录或动态、是否拒绝好友申请等）。您将某用户屏蔽后，双方互动与可见性将按应用规则调整（例如对方可能无法通过 UID 添加您，且动态流可能按规则过滤）。具体请参见 <a href="privacy-policy.html">《隐私政策》</a> 与应用内说明。</p>
+
+        <h2>七、虚拟物品与应用内购买</h2>
+        <p>本应用可能提供精力、忍耐力相关玩法或称号、背景等虚拟展示内容，以及通过 Apple 应用内购买（IAP）等方式获得的项目。虚拟物品的使用范围、有效期及是否可转移，以应用内说明与 Apple 政策为准。除法律另有强制性规定外，<strong>已完成的 IAP 一般不支持退款</strong>，如需帮助请通过 Apple 报告问题流程处理。</p>
+
+        <h2>八、数据、备份与免责声明</h2>
+        <p>您的数据主要存储于云端与本地；我们会采取合理措施保障服务稳定与数据安全，但因不可抗力、网络故障、第三方服务中断、设备丢失或您自身原因导致的数据丢失或泄露，我们在法律允许范围内不承担责任。建议您重视账号安全并理解互联网服务存在固有风险。</p>
+
+        <h2>九、账号注销</h2>
+        <p>您可在应用内按流程申请注销账号。注销前通常需完成身份验证。注销后，我们将按 <a href="privacy-policy.html">《隐私政策》</a> 与应用内说明删除或匿名化处理您的账号相关数据；<strong>受技术与成本限制，不保证删除您曾发布的全部 UGC 或关联数据</strong>（例如历史动态是否全部清除以届时服务端策略为准）。注销不可逆，请谨慎操作。</p>
+
+        <h2>十、协议变更</h2>
+        <p>我们可能适时修订本协议。修订后，我们将在应用内公布或提示；若您在修订生效后继续使用本应用，即视为接受修订后的协议；若您不同意，请停止使用并注销账号。</p>
+
+        <h2>十一、适用法律与争议</h2>
+        <p>本协议的订立、效力与解释，适用中华人民共和国大陆地区法律（仅为本协议目的）。因本协议引起的争议，双方应友好协商；协商不成的，任一方可向有管辖权的人民法院提起诉讼。</p>
+
+        <h2>十二、联系我们</h2>
+        <p>如您对本协议有疑问，请通过应用内「帮助与支持」等入口反馈，或通过您已知的开发者联系方式与我们联系。</p>
     </div>
 
     <!-- English version -->
     <div id="en" class="lang">
         <h1>LUER User Agreement</h1>
-        <p class="updated">Last updated: March 2026</p>
+        <p class="updated">Last updated: April 2026</p>
 
-        <p>Welcome to LUER. By using this app, you agree to the following terms.</p>
+        <p>Welcome to LUER (the “App”). Please read this Agreement carefully before using the App. By downloading, registering, signing in, or using the App, you agree to be bound by this Agreement. This Agreement works together with our <a href="privacy-policy.html">Privacy Policy</a>.</p>
 
-        <h2>1. Service Description</h2>
-        <p>LUER is a check-in app that helps you record daily check-in status, consecutive days, and endurance data. We aim to provide a simple and private experience.</p>
-
-        <h2>2. Account Registration and Use</h2>
+        <h2>1. Description of Services</h2>
+        <p>LUER is an iOS app for check-in and related social features, including but not limited to:</p>
         <ul>
-            <li>You must provide a valid account and password to register;</li>
-            <li>Account length: 6-20 characters, letters, numbers and underscore only;</li>
-            <li>Password: at least 8 characters, letters and numbers only;</li>
-            <li>You are responsible for keeping your credentials secure and for all activities under your account.</li>
+            <li><strong>Check-in & records</strong>: daily check-in status (e.g., Yes/No), streaks, endurance, energy, and related statistics;</li>
+            <li><strong>Friends</strong>: friend relationships, requests, and interactions (e.g., likes, titles, profile card backgrounds);</li>
+            <li><strong>Dynamics (user-generated content)</strong>: text posts, comments, and likes; feeds such as “Recommended” and “My friends”;</li>
+            <li><strong>Official mail</strong>: in-app messages from the operator, if available;</li>
+            <li><strong>Widgets</strong>: optional system widgets showing check-in summaries using on-device shared storage as designed;</li>
+            <li><strong>Tools in Settings</strong>: e.g., image utilities, document scanning, PDF tools—subject to what the App actually provides.</li>
+        </ul>
+        <p>We may adjust features as the product evolves. Material changes will be communicated in the App or by other reasonable means.</p>
+
+        <h2>2. Registration, Sign-In, and Security</h2>
+        <ul>
+            <li>You must register as guided and ensure your information is truthful and accurate;</li>
+            <li>Username length is typically 6–20 characters (letters, numbers, underscore—subject to in-app validation). Password: at least 8 characters, letters and numbers only (subject to in-app validation);</li>
+            <li>You may use Sign in with Apple or other methods offered in the App. The number of LUER accounts that may be bound to a single Apple ID is subject to in-app rules and prompts;</li>
+            <li>You are responsible for safeguarding credentials and for all activity under your account.</li>
         </ul>
 
         <h2>3. User Conduct</h2>
         <ul>
-            <li>Do not use the app for illegal activities;</li>
-            <li>Do not post content that violates rules, infringes rights, or harasses others;</li>
-            <li>Do not maliciously disrupt the app or others' use.</li>
+            <li>Do not use the App for illegal activity or to violate others’ rights;</li>
+            <li>Do not post obscene, violent, hateful, fraudulent, infringing, harassing, or otherwise prohibited content in display names, posts, or comments;</li>
+            <li>Do not disrupt the App, servers, or other users—e.g., abusive automation or scraping;</li>
+            <li>The App may block submissions that hit profanity or policy filters; further enforcement may apply.</li>
         </ul>
 
-        <h2>4. Data and Content</h2>
-        <p>Your check-in records, notes, and other data are stored in the cloud. We will protect your data within reasonable means. You may view, edit, or delete your data at any time.</p>
+        <h2>4. User-Generated Content (UGC) and License</h2>
+        <p>You are responsible for content you post in Dynamics, comments, and similar features. You represent that you have the rights or permission to post it.</p>
+        <p>To operate the App, display content, and maintain safety, you grant us a worldwide, non-exclusive, royalty-free, sublicensable license to host, copy, display, and distribute your UGC in the App and related services, and to use it as reasonably necessary to comply with law, enforce this Agreement, handle reports, and protect security.</p>
+        <p>Author display names in posts may be snapshots at publish time; older posts may not reflect nickname changes.</p>
 
-        <h2>5. Disclaimer</h2>
-        <p>We are not liable for service interruptions or data issues caused by network conditions, device failures, or other force majeure. We will assist with recovery when possible.</p>
+        <h2>5. Reporting, Review, and Enforcement</h2>
+        <p>You may report inappropriate display names in friend-related features and report posts or comments in Dynamics. We will review reports and may warn, delete content, restrict features, or take account-level action.</p>
+        <p><strong>Dynamics reports:</strong> confirmed violations may result in <strong>removal of the reported post</strong>. To verify reports, information may include the post’s <strong>unique ID (momentId)</strong>, the <strong>full post text</strong> (or legacy preview fields), the reported user’s <strong>username and UID</strong>, <strong>report type</strong>, <strong>description</strong>, and <strong>timestamp</strong>. The App may limit repeated reports of the <strong>same post</strong> within a short window to reduce abuse.</p>
+        <p>Comment reporting and deletion follow in-app rules; post authors or comment authors may be able to delete comments as implemented.</p>
 
-        <h2>6. Amendments</h2>
-        <p>We may update these terms from time to time. Updated terms will be published in the app. Continued use constitutes acceptance of the revised terms.</p>
+        <h2>6. Privacy, Visibility, and Blocking</h2>
+        <p>Privacy settings may control visibility of check-ins, Dynamics, friend requests, and more. Blocking may limit discovery and how posts appear in feeds. See the <a href="privacy-policy.html">Privacy Policy</a> and in-app descriptions.</p>
+
+        <h2>7. Virtual Items and In-App Purchases</h2>
+        <p>The App may offer virtual items (e.g., energy/endurance mechanics, titles, backgrounds) and Apple In-App Purchases. Scope, duration, and transferability follow in-app text and Apple policies. Unless required by law, <strong>completed IAP transactions are generally non-refundable</strong>; use Apple’s “Report a Problem” flow where applicable.</p>
+
+        <h2>8. Data, Backups, and Disclaimer</h2>
+        <p>Data is stored in the cloud and on device. We use reasonable safeguards, but we are not liable for loss or leakage caused by force majeure, network issues, third-party outages, device loss, or your own conduct, to the extent permitted by law.</p>
+
+        <h2>9. Account Deletion</h2>
+        <p>You may delete your account in the App after identity verification. We will delete or anonymize account data as described in the <a href="privacy-policy.html">Privacy Policy</a>. <strong>We do not guarantee removal of every historical UGC item or related record</strong>—actual scope follows server policy at the time. Deletion may be irreversible.</p>
+
+        <h2>10. Changes to This Agreement</h2>
+        <p>We may update this Agreement. Updates will be posted or prompted in the App. Continued use after the effective date means acceptance. If you disagree, stop using the App and delete your account.</p>
+
+        <h2>11. Governing Law and Disputes</h2>
+        <p>For purposes of this Agreement, this Agreement is governed by the laws of mainland China. Disputes should first be resolved amicably; if that fails, either party may submit the dispute to a competent court.</p>
+
+        <h2>12. Contact</h2>
+        <p>For questions about this Agreement, contact us via Help &amp; Support in the App or other developer channels you may have.</p>
     </div>
 
     <script>
